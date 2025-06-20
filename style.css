@@ -63,9 +63,11 @@ section {
 .tile img {
     width: 100%;
     border-radius: 10px;
-    height: 160px;
+    height: auto;
+    max-height: 250px;
     object-fit: contain;
 }
+
 
 .tile p {
     margin-top: 0.5rem;
