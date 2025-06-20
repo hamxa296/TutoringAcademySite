@@ -1,94 +1,94 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-  background-color: #004aad;
-  color: white;
-  padding: 2rem;
-  text-align: center;
+    background-color: #004aad;
+    color: white;
+    padding: 2rem;
+    text-align: center;
 }
 
 nav {
-  background-color: #003a8c;
+    background-color: #003a8c;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-  margin: 0 1.5rem;
+    margin: 0 1.5rem;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  padding: 1rem;
-  display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
 }
 
 nav a:hover {
-  background-color: #002c6d;
+    background-color: #002c6d;
 }
 
 section {
-  padding: 2rem;
-  background-color: white;
-  margin: 1rem auto;
-  max-width: 900px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem;
+    background-color: white;
+    margin: 1rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tiles {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tile {
-  width: 250px;
-  text-align: center;
+    width: 250px;
+    text-align: center;
 }
 
 .tile img {
-  width: 100%;
-  border-radius: 10px;
-  height: 160px;
-  object-fit: cover;
+    width: 100%;
+    border-radius: 10px;
+    height: 160px;
+    object-fit: contain;
 }
 
 .tile p {
-  margin-top: 0.5rem;
-  font-weight: bold;
+    margin-top: 0.5rem;
+    font-weight: bold;
 }
 
 .btn {
-  display: inline-block;
-  background-color: #004aad;
-  color: white;
-  padding: 0.8rem 1.2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
+    display: inline-block;
+    background-color: #004aad;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
 }
 
 .btn:hover {
-  background-color: #00318a;
+    background-color: #00318a;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #eee;
-  font-size: 0.9rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+    font-size: 0.9rem;
 }
