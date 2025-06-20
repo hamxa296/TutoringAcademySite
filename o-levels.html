@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>O Levels Tuition | Tutoring Academy</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -31,15 +32,24 @@
       margin-bottom: 20px;
     }
 
+    .fade-wrapper {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .fade-wrapper.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
     .offer-img {
       width: 100%;
       max-width: 600px;
       display: block;
       margin: 30px auto;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      opacity: 0;
-      animation: fadeIn 1s ease-in forwards;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     }
 
     .btn-group {
@@ -85,11 +95,6 @@
       text-decoration: none;
       color: #7f8c8d;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
   </style>
 </head>
 <body>
@@ -105,7 +110,9 @@
       Regular mock tests, topic-wise revisions, and academic mentorship make our O Level program one of the most result-oriented in the region.
     </p>
 
-    <img src="images/o-level-offer.jpg" alt="O Level Offer" class="offer-img">
+    <div class="fade-wrapper">
+      <img src="images/o-level-offer.jpg" alt="O Level Offer" class="offer-img">
+    </div>
 
     <div class="btn-group">
       <a href="https://forms.gle/YOUR_OFFER_FORM_LINK" class="offer-btn" target="_blank">Apply for Offer</a>
@@ -114,6 +121,12 @@
 
     <a href="index.html" class="back-link">← Back to Home</a>
   </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.querySelector(".fade-wrapper").classList.add("loaded");
+    });
+  </script>
 
 </body>
 </html>
