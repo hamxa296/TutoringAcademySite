@@ -1,10 +1,15 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header */
 header {
     background-color: #004aad;
     color: white;
@@ -12,6 +17,7 @@ header {
     text-align: center;
 }
 
+/* Navigation */
 nav {
     background-color: #003a8c;
 }
@@ -33,12 +39,15 @@ nav a {
     text-decoration: none;
     padding: 1rem;
     display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
     background-color: #002c6d;
 }
 
+/* Main Section */
 section {
     padding: 2rem;
     background-color: white;
@@ -48,6 +57,7 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Tiles Section */
 .tiles {
     display: flex;
     gap: 1rem;
@@ -57,6 +67,7 @@ section {
 
 .tile {
     width: 250px;
+    min-width: 200px;
     text-align: center;
 }
 
@@ -68,12 +79,20 @@ section {
     object-fit: contain;
 }
 
+.tile-img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    border-radius: 12px;
+    object-fit: cover;
+}
 
 .tile p {
     margin-top: 0.5rem;
     font-weight: bold;
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     background-color: #004aad;
@@ -82,12 +101,17 @@ section {
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: #00318a;
+    box-shadow: 0 0 0 3px rgba(0, 74, 173, 0.3);
+    outline: none;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
