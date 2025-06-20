@@ -1,28 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>13+ Common Entrance | Tutoring Academy</title>
-  <style>/* same style as above */</style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f3ee;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .offer-img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 30px auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      opacity: 0;
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    .btn-group {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-group a {
+      display: inline-block;
+      padding: 14px 26px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: 0.3s ease;
+      font-weight: 600;
+    }
+
+    .offer-btn {
+      background: #27ae60;
+    }
+
+    .offer-btn:hover {
+      background: #2ecc71;
+      transform: translateY(-2px);
+    }
+
+    .regular-btn {
+      background: #2980b9;
+    }
+
+    .regular-btn:hover {
+      background: #3498db;
+      transform: translateY(-2px);
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #7f8c8d;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-  <h1>13+ Tuition Program</h1>
+  <div class="container">
+    <h1>13+ Tuition Program</h1>
 
-  <p>
-    The 13+ Common Entrance exam requires deep subject knowledge and critical thinking. Our expert-led sessions cover English, Math, Science, and Humanities, ensuring students are fully prepared for top-tier schools.
-  </p>
-  <p>
-    With past paper practice, exam strategy coaching, and 1-on-1 support, we help students build confidence and perform at their best on exam day.
-  </p>
+    <p>
+      The 13+ Common Entrance exam requires deep subject knowledge and critical thinking. Our expert-led sessions cover English, Math, Science, and Humanities, ensuring students are fully prepared for top-tier schools.
+    </p>
+    <p>
+      With past paper practice, exam strategy coaching, and 1-on-1 support, we help students build confidence and perform at their best on exam day.
+    </p>
 
-  <img src="images/13plus-offer.jpg" alt="13+ Offer" class="offer-img">
+    <img src="images/13plus-offer.jpg" alt="13+ Offer" class="offer-img">
 
-  <div style="text-align: center;">
-    <a href="https://forms.gle/YOUR_OFFER_FORM_LINK" class="offer-btn" target="_blank">Apply for Offer</a>
-    <a href="https://forms.gle/YOUR_REGULAR_FORM_LINK" class="regular-btn" target="_blank">Regular Sign Up</a>
+    <div class="btn-group">
+      <a href="https://forms.gle/YOUR_OFFER_FORM_LINK" class="offer-btn" target="_blank">Apply for Offer</a>
+      <a href="https://forms.gle/YOUR_REGULAR_FORM_LINK" class="regular-btn" target="_blank">Regular Sign Up</a>
+    </div>
+
+    <a href="index.html" class="back-link">← Back to Home</a>
   </div>
-
-  <a href="index.html" class="back-link">← Back to Home</a>
 
 </body>
 </html>
